@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_device_title"
+        android:key="pref_key_storage_settings">
+        <Preference
+            android:id="@+id/device_list"
+            android:key="pref_key_device_list"
+            android:title="Device"
+            android:summary="Select your wearable" />
+        <CheckBoxPreference
+            android:id="@+id/sharing_device"
+            android:key="pref_key_sharing_device"
+            android:summary="@string/pref_summary_sharing_device"
+            android:title="@string/pref_title_sharing_device"
+            android:defaultValue="true" />
+        <PreferenceScreen
+            android:title="@string/pref_title_version_device"
+            android:key="version"
+            android:summary="@string/pref_summary_version_device">
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>
